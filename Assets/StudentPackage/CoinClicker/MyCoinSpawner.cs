@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -20,7 +20,11 @@ namespace DIStudy.CoinClicker.Student
         private MyGameConfig m_Config;
 
         [Inject]
-        public void Construct(IObjectResolver resolver, MyGameConfig config) { }
+        public void Construct(IObjectResolver resolver, MyGameConfig config)
+        {
+            m_Resolver = resolver;
+            m_Config = config;
+        }
 
         private void Start()
         {

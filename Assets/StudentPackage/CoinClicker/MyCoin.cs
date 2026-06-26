@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using VContainer;
 
@@ -17,7 +17,12 @@ namespace DIStudy.CoinClicker.Student
         public event Action<MyCoin> Collected;
 
         [Inject]
-        public void Construct(IScoreService score, IAudioService audio, MyGameConfig config) { }
+        public void Construct(IScoreService score, IAudioService audio, MyGameConfig config)
+        {
+            m_Score = score;
+            m_Audio = audio;
+            m_Config = config;
+        }
 
         public void Collect()
         {

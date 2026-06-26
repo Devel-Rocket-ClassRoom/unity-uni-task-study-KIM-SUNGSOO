@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/StudentPackage/Scenes/SceneA.unity
-    guid: 3c1b315300df5ba4ebc8f1c9f04e29fd
+    path: Assets/Singletone/Scene/SingletonA.unity
+    guid: 0712e99383d82c941a8dd18ecee5226c
   - enabled: 1
-    path: Assets/StudentPackage/Scenes/SceneB.unity
-    guid: 02f485ce7421fae489a0569e2ae400ec
+    path: Assets/Singletone/Scene/SingletonB.unity
+    guid: 3b3f0937a3443c24ca55e57c49ab7db5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
